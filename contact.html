@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240104131318" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo"><img src="img/logo.png" alt="Logo" /></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<a href="index.html" class="menu__logo"><img src="img/logo.png" alt="Logo" /></a>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Main</a>
+							</li>
+							<li class="menu__item">
+								<a href="index.html#services" class="menu__link">Our Services</a>
+							</li>
+							<li class="menu__item">
+								<a href="work.html" class="menu__link">Our Work</a>
+							</li>
+							<li class="menu__item">
+								<a href="about.html" class="menu__link">About Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="info.html" class="menu__link">Legal Info</a>
+							</li>
+						</ul>
+						<div class="menu__bottom bottom">
+							<p class="bottom__rights">All rights reserved. 2023</p>
+							<div class="bottom__social">
+								<a href="#"><img src="img/icons/linkedin.svg" alt="linkedin" /></a>
+								<a href="#"><img src="img/icons/instagram.svg" alt="instagram" /></a>
+								<a href="#"><img src="img/icons/facebook.svg" alt="facebook" /> </a>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<a href="contact.html" class="header__button button button--small" data-da=".menu__body, 479.98, 2">Contact Us</a>
+				<button type="button" class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page page--contact">
+			<section class="contact appearance" data-watch data-watch-once>
+				<div class="contact__container">
+					<div class="contact__content">
+						<h1 class="contact__title page-title">Contact us now</h1>
+						<p class="contact__text text">
+							If you still have any questions our team can answer them. We will ask you for
+							details such as amount of work and will give you a free quote.
+						</p>
+						<a href="mailto:jon772002@gmail.com" class="contact__link">
+							<div class="contact__link-icon">
+								<img src="img/icons/chat.svg" alt="chat" />
+							</div>
+							<div class="contact__link-content">
+								<h6 class="contact__link-title">Chat with us</h6>
+								<p class="contact__link-text">Our friendly team is here to help.</p>
+								<span class="contact__link-contact">jon772002@gmail.com</span>
+							</div>
+						</a>
+						<a href="tel: +20 0000000000" class="contact__link">
+							<div class="contact__link-icon">
+								<img src="img/icons/phone.svg" alt="phone" />
+							</div>
+							<div class="contact__link-content">
+								<h6 class="contact__link-title">Call us</h6>
+								<p class="contact__link-text">Monday-Friday from 8 to 18</p>
+								<span class="contact__link-contact">+20 0000000000</span>
+							</div>
+						</a>
+					</div>
+
+					<form data-ajax method="POST" action="" class="contact__form form" data-goto-error>
+						<div class="form__line">
+							<label for="name" class="form__label">How can we call you?</label>
+							<input id="name" autocomplete="off" type="text" name="name" placeholder="Your Name" class="input" data-required="name" data-error="1-25 characters" data-validate maxlength="25" />
+						</div>
+						<div class="form__line">
+							<label for="address" class="form__label">Adress</label>
+							<input id="address" autocomplete="off" type="text" name="address" placeholder="Adress line" class="input" />
+						</div>
+						<div class="form__line">
+							<label for="postal-code" class="form__label">Postal Code</label>
+							<input id="postal-code" class="input input--small" autocomplete="off" type="text" name="postal-code" placeholder="A1B2C3" data-required="postal-code" data-validate data-error="invalid postal code" maxlength="6" />
+						</div>
+						<div class="form__line">
+							<label for="email" class="form__label">Your email</label>
+							<input id="email" autocomplete="off" type="email" name="email" placeholder="example@mail.com" class="input" data-required="email" data-validate data-error="invalid email" />
+						</div>
+						<div class="form__line form__line--phone">
+							<label for="phone" class="form__label">Your phone</label>
+							<input id="phone" autocomplete="off" type="tel" name="phone" placeholder="000 000 0000" class="input" maxlength="10" data-required="phone" data-validate data-error="invalid phone number" />
+						</div>
+						<div class="form__line">
+							<label class="form__label">Choose service category</label>
+							<select name="service" multiple data-required>
+								<option value="">Select one or more</option>
+								<option value="Handyman">Handyman</option>
+								<option value="Paint & Drywall">Paint & Drywall</option>
+								<option value="Carpentry">Carpentry</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<div class="form__label">Attach photos (optional)</div>
+							<div class="file-loader">
+								<div class="file-loader__message"></div>
+								<div class="file-loader__input-wrapper">
+									<label class="file-loader__label" for="fileInput">Drop the file or click to open from your device</label>
+									<input id="fileInput" class="file-loader__input" type="file" name="image" multiple />
+								</div>
+								<ul class="file-loader__files"></ul>
+							</div>
+						</div>
+						<div class="form__line">
+							<label for="message" class="form__label">Describe your issue</label>
+							<textarea data-autoheight id="message" name="message" placeholder="What project you have in mind? Are the any question you want to ask us? Type away :)" class="input" data-validate maxlength="1000" data-required="message" data-error="50-1000 characters"></textarea>
+						</div>
+						<div class="checkbox">
+							<input id="c_1" class="checkbox__input" type="checkbox" name="agreement" data-required />
+							<label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree with the <a href="info.html">privacy policy</a></span></label>
+						</div>
+						<button type="submit" class="button">Send Contact Request</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer appearance" data-watch data-watch-once data-watch-threshold="0.5">
+			<div class="footer__container">
+				<div class="footer__top">
+					<a href="index.html" class="footer__logo"><img src="img/logo.png" alt="Logo" /></a>
+					<nav class="footer__menu">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="index.html" class="footer__link">Main</a>
+							</li>
+							<li class="footer__item"><a href="work.html" class="footer__link">Our Work</a></li>
+							<li class="footer__item">
+								<a href="index.html#services" class="footer__link">Our Services</a>
+							</li>
+							<li class="footer__item"><a href="about.html" class="footer__link">About Us</a></li>
+							<li class="footer__item">
+								<a href="info.html" class="footer__link">Legal Info</a>
+							</li>
+							<li class="footer__item">
+								<a href="contact.html" class="footer__link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom bottom">
+					<p class="bottom__rights">All rights reserved. 2023</p>
+					<div class="bottom__social">
+						<a href="#"><img src="img/icons/linkedin.svg" alt="linkedin" /></a>
+						<a href="#"><img src="img/icons/instagram.svg" alt="instagram" /></a>
+						<a href="#"><img src="img/icons/facebook.svg" alt="facebook" /> </a>
+					</div>
+				</div>
+				<p class="footer__operate">We operate in GTA, Ontario, Canada</p>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20240104131318"></script>
+</body>
+
+</html>
